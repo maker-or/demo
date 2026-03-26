@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html.deck-present,
+html.deck-present body {
+  height: 100%;
+  overflow: hidden;
+}
+
+html.deck-present body {
+  background: #000000;
+  color: #ededed;
+}
