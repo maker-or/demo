@@ -6,15 +6,16 @@ import type { ComponentType } from "react";
 export function FrameOauthAppConfig() {
   return (
     <div className="flex w-full flex-col">
-      <div
-        className="grid min-h-[calc(100dvh-clamp(5.5rem,15vw,11rem))] w-full flex-1 grid-cols-1 divide-y divide-zinc-700/35 md:grid-cols-2 md:divide-x md:divide-y-0"
-      >
+      <div className="grid min-h-[calc(100dvh-clamp(5.5rem,15vw,11rem))] w-full flex-1 grid-cols-1 divide-y divide-zinc-700/35 md:grid-cols-2 md:divide-x md:divide-y-0">
         {/* First half: application name */}
         <div className="flex min-h-[min(50dvh,28rem)] flex-col justify-center px-[clamp(1.25rem,5vw,4rem)] py-[clamp(2rem,6vw,5rem)] md:min-h-0">
           <label className="text-[clamp(1.05rem,2.4vw,1.5rem)] font-normal tracking-wide text-zinc-400">
             Name of the application
           </label>
-          <div className="mt-8 h-[3px] w-full max-w-none rounded-full bg-zinc-100/85" aria-hidden />
+          <div
+            className="mt-8 h-[3px] w-full max-w-none rounded-full bg-zinc-100/85"
+            aria-hidden
+          />
         </div>
 
         {/* Second half: domains & redirect URIs */}
@@ -111,7 +112,7 @@ export function FrameOauthSignIn() {
         type="button"
         className="rounded-none border border-zinc-600/70 bg-zinc-800/95 px-10 py-3 text-[clamp(0.95rem,2vw,1.1rem)] font-normal tracking-wide text-zinc-200 transition hover:bg-zinc-700/90"
       >
-        sign in with hax
+        sign in with polaris
       </button>
     </div>
   );

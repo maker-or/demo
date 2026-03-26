@@ -27,15 +27,15 @@ export const deck: DeckConfig = {
         {
           kind: "code",
           language: "typescript",
-          lines: ['import { create } from "hax/ai"'],
+          lines: ['import { create } from "polaris/ai"'],
         },
         {
           kind: "code",
           language: "typescript",
           lines: [
-            "const hax = create({",
-            "  accessToken: process.env.HAX_ACCESS_TOKEN,",
-            "  refreshToken: process.env.HAX_REFRESH_TOKEN,",
+            "const polaris = create({",
+            "  accessToken: process.env.POLARIS_ACCESS_TOKEN,",
+            "  refreshToken: process.env.POLARIS_REFRESH_TOKEN,",
             "})",
           ],
         },
@@ -43,7 +43,7 @@ export const deck: DeckConfig = {
           kind: "code",
           language: "typescript",
           lines: [
-            "const res = hax.generate({",
+            "const res = polaris.generate({",
             "  model: 'gpt-5.4',",
             "  provider: 'openai',",
             "  class: 'frontier',",
